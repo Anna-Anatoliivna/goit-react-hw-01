@@ -1,11 +1,18 @@
-// import styles from "./FriendList.module.css"
+import styles from "./FriendList.module.css"
 
-// export const FriendList = ({ friends }) => {
-//     return (
-//         <div className={styles.card} key={id}>
-//             {friends.map(({ avatar, name, isOnline }) => (
-//                 <img src={avatar} alt="Avatar" width="48" />
-//         <p>{name}</p>
-//         <p>{isOnline}</p>            
-//                 </div>)
-//            ) }
+export const FriendList = ({ friends }) => {
+    return (
+        <div className={styles.card}>
+            <ul className={styles.list}>
+                {friends.map(({ avatar, name, isOnline, id }) => (
+                    <li className={styles.item} key={id}>
+                        <img src={avatar} alt="Avatar" width="48" />
+                        <p>{name}</p>
+                        <p>{isOnline}</p>
+                    </li>
+                )
+                )}
+            </ul>
+            </div>
+        );
+    };
