@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import styles from "./FriendList.module.css"
 
 export const FriendList = ({ friends }) => {
@@ -8,7 +9,8 @@ export const FriendList = ({ friends }) => {
                     <li className={styles.item} key={id}>
                         <img src={avatar} alt="Avatar" width="48" />
                         <p>{name}</p>
-                        <p>{isOnline}</p>
+                        <p className={clsx("status", isOnline === true && "online",
+                            isOnline === false && "offline")}>{isOnline === true ? "Online" : "Offline"}</p>
                     </li>
                 )
                 )}

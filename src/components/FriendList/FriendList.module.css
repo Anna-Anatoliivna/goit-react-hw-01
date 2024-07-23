@@ -17,3 +17,13 @@
   background-color: #efe8e4;
   padding: 20px;
 }
+
+.status {
+  font-size: 18px;
+}
+.online {
+color: green;
+}
+.offline {
+color: red;
+}
