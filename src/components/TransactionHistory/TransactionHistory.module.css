@@ -1,0 +1,15 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+.item {
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+.thead {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.87);
+}
+.text {
+}

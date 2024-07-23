@@ -5,27 +5,27 @@ export const Profile = ({ name, tag, location, image, stats }) => {
     return (
         <div className={styles.card}>
             <div>
-                <img
+                <img className={styles.img}
                     src={image}
                     alt="User avatar"
                 />
-                <p>{name}</p>
-                <p>{tag}</p>
-                <p>{location}</p>
+                <p className={styles.title}>{name}</p>
+                <p className={styles.tag}>{tag}</p>
+                <p className={styles.tag}>{location}</p>
             </div>
 
-            <ul>
-                <li>
-                    <span>Followers</span>
-                    <span>{stats.followers}</span>
+            <ul className={styles.list}>
+                <li className={styles.listItem}>
+                    <span className={styles.text}>Followers</span>
+                    <span className={styles.stat}>{stats.followers}</span>
                 </li>
-                <li>
-                    <span>Views</span>
-                    <span>{stats.views}</span>
+                <li className={styles.listItem}>
+                    <span className={styles.text}>Views</span>
+                    <span className={styles.stat}>{stats.views}</span>
                 </li>
-                <li>
-                    <span>Likes</span>
-                    <span>{stats.likes}</span>
+                <li className={styles.listItem}>
+                    <span className={styles.text}>Likes</span>
+                    <span className={styles.stat}>{stats.likes}</span>
                 </li>
             </ul>
         </div>
